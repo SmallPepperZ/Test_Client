@@ -18,8 +18,8 @@ def create_account():
     password = password_input.get()
     account_creation_post = requests.post("https://api.ferris.chat/api/v0/users", json={
         "username": username,
-        "password": email,
-        "email": password
+        "password": password,
+        "email": email
     }
                                           )
     print(account_creation_post.json())
