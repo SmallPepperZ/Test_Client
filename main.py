@@ -4,7 +4,6 @@ import requests
 
 main = tk.Tk()
 main.title("FerrisChat")
-main.iconbitmap("ferris.ico")
 main.geometry("1440x1080")
 
 username_input = tk.StringVar()
