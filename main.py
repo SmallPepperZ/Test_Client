@@ -4,7 +4,6 @@ import requests
 
 main = tk.Tk()
 main.title("FerrisChat")
-main.iconbitmap("ferris.ico")
 main.geometry("1440x1080")
 
 username_input = tk.StringVar()
@@ -18,8 +17,8 @@ def create_account():
     password = password_input.get()
     account_creation_post = requests.post("https://api.ferris.chat/api/v0/users", json={
         "username": username,
-        "password": email,
-        "email": password
+        "password": password,
+        "email": email
     }
                                           )
     print(account_creation_post.json())
