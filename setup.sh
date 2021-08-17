@@ -1,5 +1,5 @@
 #!/bin/sh
-if ! python3 --version; then
+if ! which python3 &> /dev/null; then
 	echo "You do not have python3 in your path"
 else
 	cd "$(dirname "$0")"
